@@ -1,79 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-	var monthlyOptions = {
-		series: [
-			{
-				name: "Month",
-				data: [
-					{
-						x: "Jan",
-						y: 500000,
-					},
-					{
-						x: "Feb",
-						y: 450000,
-					},
-					{
-						x: "Mar",
-						y: 400000,
-					},
-					{
-						x: "Apr",
-						y: 350000,
-					},
-					{
-						x: "May",
-						y: 300000,
-					},
-					{
-						x: "Jun",
-						y: 250000,
-					},
-					{
-						x: "Jul",
-						y: 200000,
-					},
-					{
-						x: "Aug",
-						y: 200000,
-					},
-					{
-						x: "Sep",
-						y: 250000,
-					},
-					{
-						x: "Oct",
-						y: 300000,
-					},
-					{
-						x: "Nov",
-						y: 400000,
-					},
-					{
-						x: "Dec",
-						y: 450000,
-					},
-				],
-			},
-		],
-		chart: {
-			height: 350,
-			type: "heatmap",
-		},
-		dataLabels: {
-			enabled: false,
-		},
-		colors: ["#008FFB"],
-		title: {
-			text: "HeatMap Chart (Monthly)",
-		},
-	};
-
-	var monthlyChart = new ApexCharts(
-		document.querySelector("#monthly"),
-		monthlyOptions
-	);
-	monthlyChart.render();
-
 	var hourlyOptions = {
 		series: [
 			{
@@ -188,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 		colors: ["#008FFB"],
 		title: {
-			text: "HeatMap Chart -- Default Gradient",
+			text: "HeatMap Chart (Hourly) -- Default Gradient",
 		},
 	};
 
@@ -336,11 +261,11 @@ document.addEventListener("DOMContentLoaded", () => {
 			},
 		},
 		title: {
-			text: "HeatMap Chart -- Color Ranges",
+			text: "HeatMap Chart (Hourly) -- Color Ranges",
 		},
-        legend:{
-            show: true,
-        }
+		legend: {
+			show: true,
+		},
 	};
 
 	var hourlyChart2 = new ApexCharts(
@@ -569,7 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			},
 		},
 		title: {
-			text: "HeatMap Chart -- Custom Gradient",
+			text: "HeatMap Chart (Hourly) -- Custom Gradient",
 		},
 	};
 
@@ -578,4 +503,5 @@ document.addEventListener("DOMContentLoaded", () => {
 		hourlyOptions3
 	);
 	hourlyChart3.render();
+
 });
